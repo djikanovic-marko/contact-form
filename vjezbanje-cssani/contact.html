@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineweb 2</title>
+    <link rel="stylesheet" href="stylecontact.css">
+    <link rel="stylesheet" href="media_queries.css">
+
+    
+
+</head>
+<body>
+       <div id="wrapper">
+           <form id="form" class="form" action="" method="post">
+               <div id="header"><h2>CONTACT FORM</h2></div>
+
+                <div id="form-control">
+                   <label for="username">Username</label>
+                       <input type="text" placeholder="Marko" class="username"id="username" required/>
+                      
+                </div>
+
+                <div id="form-control">
+                  <label for="email">Email</label>
+                  <input type="email" placeholder="marko@gmail.com" class="email" id="email" required />
+
+                </div>
+
+                <div id="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" 
+                    placeholder="password" class="password" id="password" autocomplete="none" onclick="checkPass();"/>
+                    <progress max="100" value="0" id="strength" style="width: 250px;"></progress>
+                  </div>
+
+                  <div id="form-control">
+                    <label for="password2">Confirm password</label>
+                    <input type="password" placeholder="password" class="password2"id="password2"/>
+  
+                  </div>
+
+                  <div class="statusElm">
+
+                  </div>
+
+                  <div class="button">
+                  <button value="Submit" type="submit" class="button"id="button">Submit</button>
+             </div>
+            
+                </form>
+                
+                <div class="goBack">
+                <a href="index.html"><< Go back</a>
+            </div>
+       </div>
+
+<script src="contact.js"></script>
+    </body>
+    </html>

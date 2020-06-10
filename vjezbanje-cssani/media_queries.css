@@ -1,0 +1,109 @@
+@media screen and (max-width: 950px){
+    #wrapper {
+        width: 95%;
+    }
+    .front-over {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 700px){
+    nav {
+        display: none;
+        
+    }
+    .main {
+        flex-direction: column;
+    }
+    .left-side-main,
+    .right-side-main {
+        width: 100%;
+    }
+    .all-tags {
+        justify-content: center;
+    }
+    #hamburger {
+        display: inline-block;
+        cursor: pointer;
+        align-items: center;
+        margin-right: 15px;
+        position: relative;
+    }
+    header {
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .line {
+        height: 2px;
+        width: 15px;
+        margin:3px 0;
+        background-color: white;
+    }
+    header .nav-active {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       position: absolute;
+       top:120px;
+       right:25px;
+       z-index: 1;
+       background-color: red;
+       opacity: 0.7;
+    width: 90%;
+       height: 100%;
+    }
+    header .nav-active a {
+        height: 25px;
+        width: 100%;
+        margin:0 auto;
+    }
+    
+    .first-level:hover  {
+        background-color:none;
+    }
+    .first-level:hover .second-level {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 500px){
+    header .nav-active  {
+        
+        
+    }
+    
+}
+@media screen and (max-width: 360px){
+    .front-over {
+        display: none;
+    }
+    .p-and-img {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .computer {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .both-texts-photos {
+        flex-direction: column;
+    }
+    .left-text-photo {
+        width: 100%;
+    }
+    #wrapper {
+        min-width: 300px;
+    }
+    h2 {
+        text-align: center;
+    }
+    #hamburger {
+        padding-left: 3px;
+    }
+    header .nav-active {
+        
+        right:13px;
+        
+    }
+    
+}
